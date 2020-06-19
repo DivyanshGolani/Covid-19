@@ -47,7 +47,6 @@ h1, .subhead{
     position: relative;
     z-index: 3;
     padding-left: 1.2em;
-    z-index: 3;
 }
 
 .subhead{
@@ -216,3 +215,88 @@ h2{
     color: white;
 }
 
+h2{
+    z-index: 5;
+}
+
+nav ul{
+    position: fixed;
+    width: 40%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a{
+    color: white;
+    padding: 1em 2em;
+    display: block;
+    background: rgb(55, 62, 66);
+}
+
+nav ul li a:hover{
+    background: rgb(124, 139, 148);
+    color: black;
+}
+
+.exit-btn{
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img{
+    width: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 540px){
+    .main-image{
+        width: 50%;
+        margin: 1em;
+
+    }
+    h1{
+        font-size: 3em;
+        margin: 0;
+    }
+    .subhead{
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+    .orange-container{
+        margin: 0 -0.5cm 0 -0.5cm;
+        padding: 0;   
+    }
+    .orange-container .container ul li img{
+        width: 60%;
+        margin: 1em;
+    }
+    .orange-container .container ul li:nth-child(2) img{
+        width: 60%;
+    }
+    .orange-container ul{
+        display: flex;
+        margin-top: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+    .orange-container ul li{
+        margin: 1em 1em 0 1em;
+    }
+    .orange-container ul li p{
+        padding: 0.8em;
+    }
+    .grey-container ul{
+        display: flex;
+        justify-content: center;
+    }
+    .modi{
+        width: 30%;
+    }
+}
