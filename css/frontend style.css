@@ -369,4 +369,25 @@ nav ul li a:hover{
         background-color: inherit;
         color: #0000dd;
     }
+    .scroll{
+        position: relative;
+        animation: move 3s infinite;
+    }
+    @keyframes move{
+        0%{
+            width: 10%;
+        }
+        25%{
+            width: 15%;
+        }
+        50%{
+            width: 13%;
+        }
+        75%{
+            width: 20%;
+        }
+        100%{
+            width: 10%;
+        }
+    }
 }
