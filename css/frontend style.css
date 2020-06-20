@@ -45,7 +45,7 @@ header{
 
 h1, .subhead{
     position: relative;
-    z-index: 3;
+    z-index: 8;
     padding-left: 1.2em;
 }
 
@@ -159,7 +159,7 @@ h2{
 }
 
 .cta{
-    background-color: #34495e;
+    background-color: #000080;
     color: white;
     display: block;
     border-radius: 28px;
@@ -167,6 +167,11 @@ h2{
     margin: 3%;
     position: relative;
     z-index: 4;
+}
+
+.cta:hover{
+    background: #1010f0;
+    color: black;
 }
 
 .footer-container{
@@ -225,22 +230,23 @@ nav ul{
     top: 0;
     right: 0;
     text-align: left;
-    background: rgb(36, 41, 44);
+    background: #000080;
     height: 100%;
-    z-index: 7;
+    z-index: 20;
     padding-top: 3em;
+
 }
 
 nav ul li a{
-    color: white;
+    color: black;
     padding: 1em 2em;
     display: block;
-    background: rgb(55, 62, 66);
+    background: #0303a1;
 }
 
 nav ul li a:hover{
-    background: rgb(124, 139, 148);
-    color: black;
+    background: #0202c9;
+    color: white;
 }
 
 .exit-btn{
@@ -253,6 +259,9 @@ nav ul li a:hover{
 .exit-btn img{
     width: 15px;
     cursor: pointer;
+}
+.footer-container .container a:hover{
+    color: black;
 }
 
 @media only screen and (min-width: 540px){
@@ -292,11 +301,72 @@ nav ul li a:hover{
     .orange-container ul li p{
         padding: 0.8em;
     }
-    .grey-container ul{
-        display: flex;
-        justify-content: center;
+    .grey-container{
+        padding: 0 0.5cm 0 0.5cm;
+        margin: -0.5cm -0.5cm 0 -0.5cm;
     }
-    .modi{
+    .grey-container ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .app{
         width: 30%;
+    }
+    .app{
+        width: 30%;
+    }
+    .block{
+        margin-left: 3em;
+        margin-top: -1.5em;
+    }
+    .nav ul{
+        width: 40%;
+    }
+    .footer-container .container a img{
+        width: 15%;
+    }
+    .base, .base1{
+        font-size: 80%;
+    }
+    .footer-container .container a:hover{
+        color: black;
+    }
+@media only screen and (min-width: 1020px){
+    .grey-container ul li{
+        justify-content: space-evenly;
+    }
+    .cta{
+        width: 50%;
+        left: 50%;
+        transform: translateX(-60%);
+    }
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+    .hide-desktop{
+        display: none;
+    }
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        display: flex;
+        padding-top: 0;
+    }
+    nav ul li{
+        float: left;
+    }
+    nav ul li a{
+        color: black;
+        background: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+    nav ul li a:hover{
+        background-color: inherit;
+        color: #0000dd;
     }
 }
