@@ -238,7 +238,7 @@ nav ul{
 }
 
 nav ul li a{
-    color: black;
+    color: white;
     padding: 1em 2em;
     display: block;
     background: #0303a1;
@@ -246,7 +246,7 @@ nav ul li a{
 
 nav ul li a:hover{
     background: #0202c9;
-    color: white;
+    color: black;
 }
 
 .exit-btn{
@@ -403,7 +403,7 @@ nav ul li a:hover{
         justify-content: center;
         width: 60%;
         margin-bottom: 10cm;  
-        margin-left: 14cm;  
+        margin-left: 15cm;  
         margin-top: -2cm;    
     }
     .scroll{
