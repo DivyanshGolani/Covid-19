@@ -263,6 +263,35 @@ nav ul li a:hover{
 .footer-container .container a:hover{
     color: black;
 }
+#big-virus{
+   animation: pulse 1s infinite;    
+}
+#small-viruses{
+   animation: pulse 1s infinite; 
+}
+@keyframes pulse{
+    0%{
+        fill: #f31e1300;
+    }
+    17%{
+        fill:  #f31e135d ;
+    }
+    33%{
+        fill: #f31e13b0;
+    }
+    50%{
+        fill: #F32013;
+    }
+    67%{
+        fill: #f31e138e;
+    }
+    83%{
+        fill: #f31e1349;
+    }
+    100%{
+        fill: #f31e1300;
+    }
+}
 
 @media only screen and (min-width: 540px){
     .main-image{
@@ -369,8 +398,16 @@ nav ul li a:hover{
         background-color: inherit;
         color: #0000dd;
     }
-    .scroll{
+    .scrollbox{
         position: relative;
+        justify-content: center;
+        width: 60%;
+        margin-bottom: 10cm;  
+        margin-left: 14cm;  
+        margin-top: -2cm;    
+    }
+    .scroll{
+        position: absolute;
         animation: move 3s infinite;
     }
     @keyframes move{
